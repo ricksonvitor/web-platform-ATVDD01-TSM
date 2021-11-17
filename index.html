@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ion-app>
+      <ion-header>
+        <ion-toolbar color="Dark">
+          <ion-icon name="logo-javascript" slot="start"></ion-icon>
+          <ion-title> Buscar imóveis </ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-footer>
+        <ion-toolbar color="Dark">
+          <ion-title> © 2021, Rickson Vitor</ion-title>
+        </ion-toolbar>
+      </ion-footer>
+
+      <ion-content>
+        <ion-item lines="none">
+          <ion-label>Esqueci o que iria fazer aqui (GPS) </ion-label>
+          <ion-toggle color="Dark"></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Endereço "></ion-input>
+        </ion-item>
+
+        <ion-list>
+          <ion-list-header>
+            <ion-label> </ion-label>
+          </ion-list-header>
+
+          <ion-item>
+            <ion-label>Tipo de locação</ion-label>
+            <ion-select placeholder="Escolha um ">
+              <ion-select-option value="c">Compra</ion-select-option>
+              <ion-select-option value="ac">Aluguel curto</ion-select-option>
+              <ion-select-option value="at">Aluguel Temp.</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Tipo de Imóvel</ion-label>
+            <ion-select value="cs" ok-text="Okay" cancel-text="Dismiss">
+              <ion-select-option value="cs">Casa</ion-select-option>
+              <ion-select-option value="ap">Apartamento</ion-select-option>
+              <ion-select-option value="kn">KitNet</ion-select-option>
+              <ion-select-option value="cr">Chacara</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+        <ion-button expand="full" color="Dark" Full Button>
+          <ion-icon slot="icon-only"></ion-icon>
+          Buscar
+        </ion-button>
+      </ion-content>
+
+      <!--LEMBRAR DE FAZER ALGO PRA RECEBER A BUSCAR REALIZADA DEPOIS  -->
+    </ion-app>
+  </body>
+</html>
